@@ -1,0 +1,196 @@
+/* Global Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 3rem;
+    color: #27445D;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #497D74; /* Visual Studio-style dark theme */
+    color: #EFE9D5; /* White text for contrast */
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .title::before {
+    content: "📩";
+    font-size: 2.8rem;
+    margin-right: 15px;
+  }
+  
+  /* File input styling */
+  .file-input {
+    background-color: #ecedf6;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 2px solid #27445D;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .file-input:hover {
+    background-color: #27445D;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 119, 204, 0.3);
+  }
+  
+  /* Button Group */
+  .button-group {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin: 3.5rem 0;
+  }
+  
+  button {
+    background-color: #27445D;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0021a3;
+
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(14, 99, 156, 0.3);
+  }
+  
+  /* Validation Summary */
+  .validation-summary {
+    background: #e5e0e093;
+    padding: 3rem;
+    border-radius: 12px;
+    margin-top: 3.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: center;
+    text-align: center; /* Centering text */
+  }
+  
+  .summary-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers items horizontally */
+    padding: 1.5rem;
+    background: #3D3D3D;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .summary-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .summary-label {
+    font-size: 1.8rem; /* Beautified font size */
+    color: #D4D4D4;
+    font-weight: bold; /* Added bold text */
+    margin-bottom: 1.2rem;
+    width: 100%; /* Ensures full width */
+    text-align: center; /* Ensure text alignment */
+  }
+  
+  .summary-value {
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-align: center; /* Centers the numbers */
+    width: 100%; /* Ensures full width */
+  }
+  
+  .summary-value.total {
+    color: #000;
+  }
+  
+  .summary-value.valid {
+    color: #008000;
+  }
+  
+  .summary-value.invalid {
+    color: #ff0000;
+  }
+  
+  .summary-value.valid::before {
+    content: "✅ ";
+  }
+  
+  .summary-value.invalid::before {
+    content: "❌ ";
+  }
+  
+  /* Results Table */
+  .results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .results-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .results-table th {
+    background-color: #0077cc;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .results-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .results-table tr:hover {
+    background-color: #27445D;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Upload Section */
+  .upload-section {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .upload-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 14px rgba(0, 119, 204, 0.2);
+  }
+  
