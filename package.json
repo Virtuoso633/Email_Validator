@@ -1,0 +1,14 @@
+{
+    "name": "email-validator",
+    "lockfileVersion": 3,
+    "requires": true,
+    "packages": {},
+    "scripts": {
+        "frontend": "cd frontend && npm run dev",
+        "backend": "cd backend && npm run start",
+        "dev": "concurrently \"npm run frontend\" \"npm run backend\""
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.2"
+    }
+}
