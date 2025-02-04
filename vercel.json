@@ -21,6 +21,13 @@
           "distDir": "dist"
         }
       }
-    ]
+    ],
+    "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "backend/src/index.js"
+    }
+  ]
+
   }
   
